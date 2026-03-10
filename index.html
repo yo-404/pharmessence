@@ -33,13 +33,13 @@
     body { background-color: var(--bg); font-family: 'Lato', sans-serif; color: var(--text); }
 
     /* HEADER */
-    header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: var(--bg); height: 110px; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; border-bottom: 1px solid rgba(80,98,74,0.12); }
-    .hamburger { position: static; display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; z-index: 1100; order: 2; margin-left: auto; }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: var(--bg); height: 110px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid rgba(80,98,74,0.12); }
+    .hamburger { position: absolute; left: 32px; display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; z-index: 1100; }
     .hamburger span { display: block; width: 26px; height: 3px; background-color: var(--text); transition: all 0.35s ease; transform-origin: center; border-radius: 2px; }
     .hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
     .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-    .logo { display: flex; align-items: center; justify-content: flex-start; text-decoration: none; order: 1; }
+    .logo { display: flex; align-items: center; justify-content: center; text-decoration: none; }
     .logo img { height: 64px; width: auto; object-fit: contain; }
     .nav-overlay { position: fixed; top: 110px; left: 0; right: 0; background-color: var(--bg); z-index: 999; max-height: 0; overflow: hidden; transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1); border-bottom: 2px solid rgba(80,98,74,0.15); box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
     .nav-overlay.open { max-height: 400px; }
